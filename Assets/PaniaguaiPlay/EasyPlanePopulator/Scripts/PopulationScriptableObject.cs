@@ -6,8 +6,10 @@ using UnityEngine;
 
 public class PopulationScriptableObject : ScriptableObject
 {
-    public
-    GameObject prefab;
-    public
-    int instances;
+    public GameObject prefab;
+    public int instances;
+    public bool randomRotation = false;
+    public float minScale=1;
+    public float maxScale=1;
+    public float yOffset=0;
 }
