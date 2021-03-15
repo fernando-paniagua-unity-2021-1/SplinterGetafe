@@ -29,12 +29,10 @@ public class DetectorSonido : MonoBehaviour
         distanciaAlPlayer = Vector3.Distance(transform.position, player.transform.position);
         if (player.GetComponent<PlayerMover>().estado == PlayerMover.EstadoPlayer.Andando){
             if (distanciaAlPlayer<distanciaDeteccionAndando){
-                print("¡¡Te escucho andar!!");
                 CambiaMaterial(rojo);
             }
         } else if (player.GetComponent<PlayerMover>().estado == PlayerMover.EstadoPlayer.Corriendo){
             if (distanciaAlPlayer<distanciaDeteccionCorriendo){
-                print("¡¡Te escucho correr!!");
                 CambiaMaterial(rojo);
             }
         } else {

@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 148519425}
   - component: {fileID: 148519427}
   - component: {fileID: 148519426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,6 +484,80 @@ Transform:
   m_Father: {fileID: 4153177066231609572}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -23.69, z: 0}
+--- !u!1 &161553663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 161553664}
+  - component: {fileID: 161553665}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &161553664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161553663}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 30, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4153177066231609572}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!20 &161553665
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161553663}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 8400000, guid: 88481c4efdf0b044098e3a3c43fe12cc, type: 2}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &175957192
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,7 +649,7 @@ GameObject:
   - component: {fileID: 207852388}
   - component: {fileID: 207852390}
   - component: {fileID: 207852389}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -644,6 +718,81 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207852387}
   m_Mesh: {fileID: 2272984564045495726, guid: 6bd0146cc9656b24ab8e8845eb31ee5d, type: 3}
+--- !u!1 &224597581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224597582}
+  - component: {fileID: 224597585}
+  - component: {fileID: 224597584}
+  m_Layer: 5
+  m_Name: ImageBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &224597582
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224597581}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2075264036}
+  m_Father: {fileID: 269104835}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 1, y: 1}
+--- !u!114 &224597584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224597581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 653369ff10404504081c75099ed2d499, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &224597585
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224597581}
+  m_CullTransparentMesh: 0
 --- !u!1 &231276035
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,7 +804,7 @@ GameObject:
   - component: {fileID: 231276036}
   - component: {fileID: 231276038}
   - component: {fileID: 231276037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -815,7 +964,7 @@ GameObject:
   - component: {fileID: 236037279}
   - component: {fileID: 236037281}
   - component: {fileID: 236037280}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -884,6 +1033,105 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236037278}
   m_Mesh: {fileID: 2272984564045495726, guid: 6bd0146cc9656b24ab8e8845eb31ee5d, type: 3}
+--- !u!1 &269104831
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 269104835}
+  - component: {fileID: 269104834}
+  - component: {fileID: 269104833}
+  - component: {fileID: 269104832}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &269104832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269104831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &269104833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269104831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &269104834
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269104831}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &269104835
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269104831}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 224597582}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &272206393
 GameObject:
   m_ObjectHideFlags: 3
@@ -950,7 +1198,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272206393}
-  m_LocalRotation: {x: 0.0027964497, y: 0.9782008, z: -0.20722255, w: 0.013200732}
+  m_LocalRotation: {x: 0.1942045, y: -0.34150124, z: 0.072343804, w: 0.9167486}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1049,7 +1297,7 @@ GameObject:
   - component: {fileID: 282426668}
   - component: {fileID: 282426670}
   - component: {fileID: 282426669}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1471,6 +1719,77 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340036482}
   m_Mesh: {fileID: -2088611232839375908, guid: 9c87d2dcc27b2104f8d733f50b09c5c7, type: 3}
+--- !u!1 &340698124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 340698125}
+  - component: {fileID: 340698127}
+  - component: {fileID: 340698126}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &340698125
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340698124}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2075264036}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 230, y: 230}
+  m_Pivot: {x: 1, y: 0}
+--- !u!114 &340698126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340698124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 8400000, guid: 88481c4efdf0b044098e3a3c43fe12cc, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &340698127
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340698124}
+  m_CullTransparentMesh: 0
 --- !u!1 &342525442
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1801,7 @@ GameObject:
   - component: {fileID: 342525443}
   - component: {fileID: 342525445}
   - component: {fileID: 342525444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1686,7 +2005,7 @@ GameObject:
   - component: {fileID: 426891274}
   - component: {fileID: 426891276}
   - component: {fileID: 426891275}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1876,7 +2195,7 @@ GameObject:
   - component: {fileID: 445212284}
   - component: {fileID: 445212286}
   - component: {fileID: 445212285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2022,7 +2341,7 @@ GameObject:
   - component: {fileID: 500202509}
   - component: {fileID: 500202511}
   - component: {fileID: 500202510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2228,7 +2547,7 @@ GameObject:
   - component: {fileID: 514420943}
   - component: {fileID: 514420945}
   - component: {fileID: 514420944}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2308,7 +2627,7 @@ GameObject:
   - component: {fileID: 533264003}
   - component: {fileID: 533264005}
   - component: {fileID: 533264004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2388,7 +2707,7 @@ GameObject:
   - component: {fileID: 533622977}
   - component: {fileID: 533622979}
   - component: {fileID: 533622978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2583,7 +2902,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534270958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.235579, y: 7, z: -8.903178}
+  m_LocalPosition: {x: -14.778481, y: 7, z: -0.9123812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2040236238}
@@ -2683,7 +3002,7 @@ GameObject:
   - component: {fileID: 563103769}
   - component: {fileID: 563103771}
   - component: {fileID: 563103770}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2763,7 +3082,7 @@ GameObject:
   - component: {fileID: 571048731}
   - component: {fileID: 571048733}
   - component: {fileID: 571048732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3033,7 +3352,7 @@ GameObject:
   - component: {fileID: 619540134}
   - component: {fileID: 619540136}
   - component: {fileID: 619540135}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3537,7 +3856,7 @@ GameObject:
   - component: {fileID: 742856799}
   - component: {fileID: 742856801}
   - component: {fileID: 742856800}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4012,7 +4331,7 @@ GameObject:
   - component: {fileID: 899024508}
   - component: {fileID: 899024510}
   - component: {fileID: 899024509}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4092,7 +4411,7 @@ GameObject:
   - component: {fileID: 903667029}
   - component: {fileID: 903667031}
   - component: {fileID: 903667030}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4172,7 +4491,7 @@ GameObject:
   - component: {fileID: 903768367}
   - component: {fileID: 903768369}
   - component: {fileID: 903768368}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4252,7 +4571,7 @@ GameObject:
   - component: {fileID: 908535900}
   - component: {fileID: 908535902}
   - component: {fileID: 908535901}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4398,8 +4717,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.00279645, y: 0.9782008, z: -0.2072226, w: 0.013200731}
-  m_LocalPosition: {x: -22.235579, y: 7, z: -8.903178}
+  m_LocalRotation: {x: 0.1942045, y: -0.34150133, z: 0.07234382, w: 0.9167486}
+  m_LocalPosition: {x: -14.778481, y: 7, z: -0.9123812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4526,8 +4845,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974928818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.74, y: 0.88, z: 4.45}
-  m_LocalScale: {x: 0.6641015, y: 2.7359471, z: 0.8853313}
+  m_LocalPosition: {x: -15.96, y: 1.154, z: 1.7}
+  m_LocalScale: {x: 0.6641015, y: 2.7359471, z: 2.0540571}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -4758,7 +5077,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994269290}
-  m_LocalRotation: {x: 0.002489497, y: 0.9827443, z: -0.18447678, w: 0.013262046}
+  m_LocalRotation: {x: 0.17288761, y: -0.3430874, z: 0.06440296, w: 0.9210067}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4870,7 +5189,7 @@ GameObject:
   - component: {fileID: 1003055288}
   - component: {fileID: 1003055290}
   - component: {fileID: 1003055289}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5253,7 +5572,7 @@ GameObject:
   - component: {fileID: 1089354386}
   - component: {fileID: 1089354388}
   - component: {fileID: 1089354387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5603,7 +5922,7 @@ GameObject:
   - component: {fileID: 1150390501}
   - component: {fileID: 1150390503}
   - component: {fileID: 1150390502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5843,7 +6162,7 @@ GameObject:
   - component: {fileID: 1188435503}
   - component: {fileID: 1188435505}
   - component: {fileID: 1188435504}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5923,7 +6242,7 @@ GameObject:
   - component: {fileID: 1196109504}
   - component: {fileID: 1196109506}
   - component: {fileID: 1196109505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6003,7 +6322,7 @@ GameObject:
   - component: {fileID: 1198681143}
   - component: {fileID: 1198681145}
   - component: {fileID: 1198681144}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6083,7 +6402,7 @@ GameObject:
   - component: {fileID: 1220674571}
   - component: {fileID: 1220674573}
   - component: {fileID: 1220674572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6325,7 +6644,7 @@ GameObject:
   - component: {fileID: 1252324263}
   - component: {fileID: 1252324265}
   - component: {fileID: 1252324264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6405,7 +6724,7 @@ GameObject:
   - component: {fileID: 1263972679}
   - component: {fileID: 1263972681}
   - component: {fileID: 1263972680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6725,7 +7044,7 @@ GameObject:
   - component: {fileID: 1281820498}
   - component: {fileID: 1281820500}
   - component: {fileID: 1281820499}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6959,7 +7278,7 @@ GameObject:
   - component: {fileID: 1306790891}
   - component: {fileID: 1306790893}
   - component: {fileID: 1306790892}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7212,7 +7531,7 @@ GameObject:
   - component: {fileID: 1362513796}
   - component: {fileID: 1362513798}
   - component: {fileID: 1362513797}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7372,7 +7691,7 @@ GameObject:
   - component: {fileID: 1414695951}
   - component: {fileID: 1414695953}
   - component: {fileID: 1414695952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7578,7 +7897,7 @@ GameObject:
   - component: {fileID: 1424412910}
   - component: {fileID: 1424412912}
   - component: {fileID: 1424412911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7658,7 +7977,7 @@ GameObject:
   - component: {fileID: 1442643041}
   - component: {fileID: 1442643043}
   - component: {fileID: 1442643042}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8122,7 +8441,7 @@ GameObject:
   - component: {fileID: 1550286765}
   - component: {fileID: 1550286767}
   - component: {fileID: 1550286766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8295,7 +8614,7 @@ GameObject:
   - component: {fileID: 1566932125}
   - component: {fileID: 1566932127}
   - component: {fileID: 1566932126}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8628,7 +8947,7 @@ GameObject:
   - component: {fileID: 1631135189}
   - component: {fileID: 1631135191}
   - component: {fileID: 1631135190}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8708,7 +9027,7 @@ GameObject:
   - component: {fileID: 1633037590}
   - component: {fileID: 1633037592}
   - component: {fileID: 1633037591}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8788,7 +9107,7 @@ GameObject:
   - component: {fileID: 1639972969}
   - component: {fileID: 1639972971}
   - component: {fileID: 1639972970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9028,7 +9347,7 @@ GameObject:
   - component: {fileID: 1716570526}
   - component: {fileID: 1716570528}
   - component: {fileID: 1716570527}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9268,7 +9587,7 @@ GameObject:
   - component: {fileID: 1790239913}
   - component: {fileID: 1790239915}
   - component: {fileID: 1790239914}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9428,7 +9747,7 @@ GameObject:
   - component: {fileID: 1812829065}
   - component: {fileID: 1812829067}
   - component: {fileID: 1812829066}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9588,7 +9907,7 @@ GameObject:
   - component: {fileID: 1867745656}
   - component: {fileID: 1867745658}
   - component: {fileID: 1867745657}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9837,7 +10156,7 @@ GameObject:
   - component: {fileID: 1913968993}
   - component: {fileID: 1913968995}
   - component: {fileID: 1913968994}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10123,7 +10442,7 @@ GameObject:
   - component: {fileID: 1965679980}
   - component: {fileID: 1965679982}
   - component: {fileID: 1965679981}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10376,7 +10695,7 @@ GameObject:
   - component: {fileID: 1999357643}
   - component: {fileID: 1999357645}
   - component: {fileID: 1999357644}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10591,7 +10910,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040236236}
-  m_LocalRotation: {x: 0.0031032243, y: 0.97310776, z: -0.22995487, w: 0.013132019}
+  m_LocalRotation: {x: 0.21550874, y: -0.33972317, z: 0.08027992, w: 0.9119755}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10599,6 +10918,95 @@ Transform:
   m_Father: {fileID: 534270960}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2075264035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2075264036}
+  - component: {fileID: 2075264039}
+  - component: {fileID: 2075264038}
+  - component: {fileID: 2075264037}
+  m_Layer: 5
+  m_Name: ImageMask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2075264036
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075264035}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 340698125}
+  m_Father: {fileID: 224597582}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 180, y: 180}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2075264037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075264035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
+--- !u!114 &2075264038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075264035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 653369ff10404504081c75099ed2d499, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2075264039
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075264035}
+  m_CullTransparentMesh: 0
 --- !u!1 &2080814450
 GameObject:
   m_ObjectHideFlags: 0
@@ -10690,7 +11098,7 @@ GameObject:
   - component: {fileID: 2118164214}
   - component: {fileID: 2118164216}
   - component: {fileID: 2118164215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10770,7 +11178,7 @@ GameObject:
   - component: {fileID: 2130123928}
   - component: {fileID: 2130123930}
   - component: {fileID: 2130123929}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10850,7 +11258,7 @@ GameObject:
   - component: {fileID: 2135317900}
   - component: {fileID: 2135317902}
   - component: {fileID: 2135317901}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: treePine(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11786,7 +12194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3668423948245721694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22, y: 0, z: -17.63}
+  m_LocalPosition: {x: -20.49, y: 0, z: 5.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9003149658788442490}
@@ -11796,6 +12204,7 @@ Transform:
   - {fileID: 483888048}
   - {fileID: 433835745}
   - {fileID: 362834226}
+  - {fileID: 161553664}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
