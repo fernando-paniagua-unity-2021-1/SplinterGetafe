@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {
+    
+    public enum EstadoPlayer { Reposo, Andando, Corriendo }
+    public EstadoPlayer estado = EstadoPlayer.Reposo;
+
+
     public Animator animator;
 
     public float rotationSpeed;
@@ -31,15 +36,19 @@ public class PlayerMover : MonoBehaviour
                 animator.SetBool(PARAM_STEALTH, true);
                 transform.Translate(Vector3.forward * Time.deltaTime * stealthSpeed * z);
                 transform.Rotate(0, x * Time.deltaTime * rotationSpeed, 0);
+                estado = EstadoPlayer.Reposo;
             } else {
                 animator.SetBool(PARAM_STEALTH, false);
                 animator.SetBool(PARAM_ANDAR, true);
                 transform.Translate(Vector3.forward * Time.deltaTime * walkSpeed * z);
                 transform.Rotate(0, x * Time.deltaTime * rotationSpeed, 0);
+                estado = EstadoPlayer.Andando;
             }
         } else {
             animator.SetBool(PARAM_ANDAR, false);
             animator.SetBool(PARAM_STEALTH, false);
+            transform.Rotate(0, x * Time.deltaTime * rotationSpeed, 0);
+            estado = EstadoPlayer.Reposo;
         }
     }
     
@@ -56,6 +65,7 @@ public class PlayerMover : MonoBehaviour
         if (z>0) {
             animator.SetBool(PARAM_CORRER, true);
             transform.Rotate(0, x * Time.deltaTime * rotationSpeed, 0);
+            estado = EstadoPlayer.Corriendo;
         } else {
             animator.SetBool(PARAM_CORRER, false);
         }
